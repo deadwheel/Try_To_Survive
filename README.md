@@ -1,51 +1,51 @@
-# GRA: Nietypowy w¹¿!
+# GRA: Nietypowy wÄ…Å¼!
 
-Gra to nietypowy w¹¿,snake w której to mamy za zadanie prze¿yæ jak najd³u¿ej a przy tym uzbieraæ jak najwiêcej punktów . Gra ró¿ni siê o typowego snake tym , ¿e zbieraj¹c punkty
-nie powiêkszamy naszego we¿a a tylko powiêkszamy nasz wynik . Punkty do zbierania s¹ oznaczone na planszy jako znak "*" . Dodatkowo oprócz punktów na planszy pojawiaj¹ siê
-obiekty dwóch typów: 
+Gra to nietypowy wÄ…Å¼,snake w ktÃ³rej to mamy za zadanie przeÅ¼yÄ‡ jak najdÅ‚uÅ¼ej a przy tym uzbieraÄ‡ jak najwiÄ™cej punktÃ³w . Gra rÃ³Å¼ni siÄ™ o typowego snake tym , Å¼e zbierajÄ…c punkty
+nie powiÄ™kszamy naszego weÅ¼a a tylko powiÄ™kszamy nasz wynik . Punkty do zbierania sÄ… oznaczone na planszy jako znak "*" . Dodatkowo oprÃ³cz punktÃ³w na planszy pojawiajÄ… siÄ™
+obiekty dwÃ³ch typÃ³w: 
 
-1. Obiekt znak zapytania "?", je¿eli go zbierzemy to wykona siê losowo jedna z dwóch funkcji
+1. Obiekt znak zapytania "?", jeÅ¼eli go zbierzemy to wykona siÄ™ losowo jedna z dwÃ³ch funkcji
  	
-	a) Znikn¹ z planszy wszystkie œciany oczywiœcie oprócz tych obramówkowych ( opisane dalej)
-	b) Odwróci siê nam sterowanie tzn góra bêdzie do³em , lewa strona praw¹ itd przy czym gra lekko spowolni  
+	a) ZniknÄ… z planszy wszystkie Å›ciany oczywiÅ›cie oprÃ³cz tych obramÃ³wkowych ( opisane dalej)
+	b) OdwrÃ³ci siÄ™ nam sterowanie tzn gÃ³ra bÄ™dzie doÅ‚em , lewa strona prawÄ… itd przy czym gra lekko spowolni  
 
-2. Obiekt œciana "#" . Tego obiektu nale¿y unikaæ poniewa¿ gdy na niego wejdziemy to giniemy.
+2. Obiekt Å›ciana "#" . Tego obiektu naleÅ¼y unikaÄ‡ poniewaÅ¼ gdy na niego wejdziemy to giniemy.
 
 ## STEROWANIE
 
-W grze sterujemy naszym wê¿em który na planszy jest widoczny jako znak "O" . Sterujemy za pomoc¹ klawiaszy W ( góra ) S ( dó³ ) A ( lewo ) D ( prawo ) chyba ze zebraliœmy znak
-zapytania i wykona³a siê funkcja odwracania sterowania wtedy góra bêdzie do³em , lewa strona praw¹ itd .
+W grze sterujemy naszym wÄ™Å¼em ktÃ³ry na planszy jest widoczny jako znak "O" . Sterujemy za pomocÄ… klawiaszy W ( gÃ³ra ) S ( dÃ³Å‚ ) A ( lewo ) D ( prawo ) chyba ze zebraliÅ›my znak
+zapytania i wykonaÅ‚a siÄ™ funkcja odwracania sterowania wtedy gÃ³ra bÄ™dzie doÅ‚em , lewa strona prawÄ… itd .
 
 
-## INSTRUKCJA OBS£UGI
+## INSTRUKCJA OBSÅUGI
 
-Sterowanie oraz opis patrz wy¿ej.
+Sterowanie oraz opis patrz wyÅ¼ej.
 
 1. Dla typowego "Kowalskiego"
-	* Wejdz do katalogu z gr¹
+	* Wejdz do katalogu z grÄ…
 	* Uruchom plik "snake_obiektowe.exe"
-	* Ciesz sie gr¹! 
+	* Ciesz sie grÄ…! 
 
-2. Dla osoby chc¹cej zaimportowaæ grê do swojego projektu w C++
+2. Dla osoby chcÄ…cej zaimportowaÄ‡ grÄ™ do swojego projektu w C++
 	* dodaj trzy biblioteki:
 		#include <cstdlib>
 		#include <ctime>
 		#include "Gra_TXT.h" 
 
-	* w mainie u¿yj: "srand(time(NULL));" najlepiej na samym pocz¹tku zapewnia to losowoœæ.
-	* Stwórz obiekt typu Gra_TXT a nastêpnie u¿yj na nim funkcji Start();
+	* w mainie uÅ¼yj: "srand(time(NULL));" najlepiej na samym poczÄ…tku zapewnia to losowoÅ›Ä‡.
+	* StwÃ³rz obiekt typu Gra_TXT a nastÄ™pnie uÅ¼yj na nim funkcji Start();
 	* Gotowe !
 
 
 
 ## OPIS KLAS
 
-obiekt  - klasa bed¹ca jednym obiektem na mapie która mo¿e byæ puste albo zajêta ( np znak zapytania , punkt czy œciana )
-player  - klasa opisuj¹ca po³o¿enie gracza na mapie .
-Dir - enumerator ze wszystikimi mo¿liwymi kierunkami w jakie mo¿e poruszaæ siê nasz w¹¿ .
-Snake_Engine - g³ówny "mózg" gry . Odbywa siê tutaj analiza czasowa ( sprawdzenie czy mo¿na ustawiæ ju¿ nowe obiekty , ustawianie ich ) i po³o¿enia gracza ( sprawdzanie czy
-gracz nie zebra³ jakiegoœ obiektu b¹dz na niego wszed³ )
-Gra - podstawowy szablon gry . Tutaj mieœci siê przede wszystkim metoda startuj¹ca grê.
+obiekt  - klasa bedÄ…ca jednym obiektem na mapie ktÃ³ra moÅ¼e byÄ‡ puste albo zajÄ™ta ( np znak zapytania , punkt czy Å›ciana )
+player  - klasa opisujÄ…ca poÅ‚oÅ¼enie gracza na mapie .
+Dir - enumerator ze wszystikimi moÅ¼liwymi kierunkami w jakie moÅ¼e poruszaÄ‡ siÄ™ nasz wÄ…Å¼ .
+Snake_Engine - gÅ‚Ã³wny "mÃ³zg" gry . Odbywa siÄ™ tutaj analiza czasowa ( sprawdzenie czy moÅ¼na ustawiÄ‡ juÅ¼ nowe obiekty , ustawianie ich ) i poÅ‚oÅ¼enia gracza ( sprawdzanie czy
+gracz nie zebraÅ‚ jakiegoÅ› obiektu bÄ…dz na niego wszedÅ‚ )
+Gra - podstawowy szablon gry . Tutaj mieÅ›ci siÄ™ przede wszystkim metoda startujÄ…ca grÄ™.
 Gra_TXT - Gra w trybie konsolowym 
 
 
